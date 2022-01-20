@@ -81,7 +81,7 @@ Pattern 8:
   212
    1
   ```
-Pattern 10:
+Pattern 9:
 ```
 1
 10
