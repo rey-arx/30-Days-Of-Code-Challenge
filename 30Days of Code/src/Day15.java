@@ -1,7 +1,7 @@
 import java.util.*;
 public class Day15 {
     public static void main(String[] args) {
-
+ 
         Scanner in=new Scanner(System.in);
         System.out.println("enter the no.of lines: ");
         int n=in.nextInt();
