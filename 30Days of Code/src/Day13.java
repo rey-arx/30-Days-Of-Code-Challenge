@@ -23,5 +23,6 @@ public class Day13{
         Scanner sc = new Scanner(System.in);
         Day13 a = new Day13();
         a.display(7);
+
     }
 }
