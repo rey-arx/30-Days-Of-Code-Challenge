@@ -1,26 +1,29 @@
+import java.util.Arrays;
+
 public class Sample {
     public static void main(String[] args) {
-        int[] array = { 1,2,3};
-        int search = 3;
-        System.out.println( "celiling is : " + Binarysearch(array , search ));
+        int[] array = { 3, 5, 7 , 1 , 4 , 6 , 8 , 2};
+        cyclicSort(array);
+        System.out.print(Arrays.toString(array));
     }
 
-    private static int Binarysearch(int [] array , int search)
-    {
-        int start = 0;
-        int end = array.length-1;
-        while(start<=end){
-             int mid = start + (end-start)/2;
-            if(search < array[mid])
-                end = mid -1;
-            else if(search > array[mid])
-                start = mid+1;
-            else
-                return mid;
+    static void cyclicSort(int[] arr) {
+        int i = 0;
+        int temp = 0;
+        while(i < arr.length) {
+            int correct = arr[i] - 1;
+            if(arr[i] != arr[correct]  ){
+                temp = arr[i];
+                arr[i] = arr[correct];
+                arr[correct] = temp;
+            }
+            else i++;
         }
-        return end;
-    }
-    public static void sear(){
-
     }
 }
+
+
+
+
+
+
